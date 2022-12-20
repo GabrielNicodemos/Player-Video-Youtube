@@ -39,18 +39,18 @@ export function CardVideo({ id, image, title, description }: CardVideoProps) {
     >
       <Flex justify="space-between">
         <Card minW="50%" height="100">
-          <Image w="100%" h="100%" src={image} alt="Dan Abramov" />
+          <Image w="100%" h="100%" src={image} alt="Youtube" borderRadius="5" />
         </Card>
         <Stack marginLeft="4">
           <Text
-            color="white"
-            fontSize="1.25rem"
-            textAlign="center"
-            fontWeight="bold"
+            color="gray.300"
+            fontSize="1rem"
+            textAlign="start"
+            noOfLines={1}
           >
             {title}
           </Text>
-          <Text color="white" fontSize="0.85rem" textAlign="center">
+          <Text color="white" fontSize="1rem" textAlign="start" noOfLines={2}>
             {description}
           </Text>
         </Stack>

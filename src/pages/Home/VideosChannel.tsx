@@ -17,11 +17,17 @@ export function VideosChannel() {
 
   return (
     <>
-      <Card minW="100%" colorScheme="teal" variant="outline" padding="2">
+      <Card
+        minW="100%"
+        colorScheme="teal"
+        variant="outline"
+        padding="4"
+        borderColor="gray.600"
+      >
         <Heading color="white" size="md">
           Módulo
         </Heading>
-        <Flex gap="1" flexDirection="column">
+        <Flex gap="1" flexDirection="column" marginTop="4">
           <Flex gap="2">
             <Text color="white" size="sm">
               Descrição

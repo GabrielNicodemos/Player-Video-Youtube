@@ -76,7 +76,9 @@ export function PlayerFooter() {
           <Flex gap="5">
             {!isEditTitle && (
               <>
-                <Heading size="lg">{playerInfo.title}</Heading>
+                <Heading size="lg" noOfLines={2}>
+                  {playerInfo.title}
+                </Heading>
                 <EditIcon onClick={() => setIsEditTitle(true)} />
               </>
             )}
@@ -103,7 +105,9 @@ export function PlayerFooter() {
           <Flex gap="1">
             {!isEditDescribe && (
               <>
-                <Text maxW="80%">{playerInfo.describe}</Text>
+                <Text maxW="80%" noOfLines={3}>
+                  {playerInfo.describe}
+                </Text>
                 <EditIcon onClick={() => setIsEditDescribe(true)} />
               </>
             )}

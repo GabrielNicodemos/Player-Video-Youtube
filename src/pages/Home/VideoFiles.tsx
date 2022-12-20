@@ -5,11 +5,17 @@ export function VideoFiles() {
   return (
     <>
       <Stack direction="column" align="flex-end" w="100%">
-        <Heading size="md" float="left">
+        <Heading size="md" textAlign="start" w="80%">
           Materiais complementares
         </Heading>
         <Stack w="80%" gap="4">
-          <Card minW="100%" colorScheme="teal" variant="outline" padding="2">
+          <Card
+            minW="100%"
+            colorScheme="teal"
+            variant="outline"
+            padding="2"
+            borderColor="gray.600"
+          >
             <Flex
               justifyContent="space-between"
               gap="10"
@@ -26,7 +32,13 @@ export function VideoFiles() {
               />
             </Flex>
           </Card>
-          <Card minW="100%" colorScheme="teal" variant="outline" padding="2">
+          <Card
+            minW="100%"
+            colorScheme="teal"
+            variant="outline"
+            padding="2"
+            borderColor="gray.600"
+          >
             <Flex
               justifyContent="space-between"
               gap="10"
